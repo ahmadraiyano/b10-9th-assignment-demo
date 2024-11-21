@@ -1,0 +1,237 @@
+[
+  {
+    "_id": "1",
+    "brand_name": "Aarong",
+    "rating": 4.7,
+    "description": "Aarong is one of Bangladesh's leading lifestyle retail chains offering ethnic clothing, home decor, and accessories.",
+    "brand_logo": "https://i.ibb.co.com/jZPZzXS/Aarong.png",
+    "coupons": [
+      {
+        "coupon_code": "AARONG15",
+        "description": "Get 15% off on your next clothing purchase.",
+        "expiry_date": "2024-12-15",
+        "condition": "Valid on clothing items only.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "AARONGFREESHIP",
+        "description": "Free shipping on orders over BDT 1500.",
+        "expiry_date": "2024-11-30",
+        "condition": "No minimum order for registered users.",
+        "coupon_type": "Free Shipping"
+      }
+    ],
+    "shop_link": "https://www.aarong.com.bd",
+    "category": "Fashion",
+    "isSaleOn": true
+  },
+  {
+    "_id": "2",
+    "brand_name": "Daraz Bangladesh",
+    "rating": 4.6,
+    "description": "Daraz is the leading online shopping platform in Bangladesh, offering everything from electronics to fashion and groceries.",
+    "brand_logo": "https://i.ibb.co.com/cv7DWsN/Daraz-Bangladesh.png",
+    "coupons": [
+      {
+        "coupon_code": "DARAZ10",
+        "description": "Save 10% on your first order.",
+        "expiry_date": "2024-11-15",
+        "condition": "First-time customers only.",
+        "coupon_type": "Discount"
+      },
+      {
+        "coupon_code": "DARAZFREE",
+        "description": "Free shipping on orders over BDT 1000.",
+        "expiry_date": "2024-12-31",
+        "condition": "No minimum order required for select sellers.",
+        "coupon_type": "Free Shipping"
+      }
+    ],
+    "shop_link": "https://www.daraz.com.bd",
+    "category": "E-commerce",
+    "isSaleOn": true
+  },
+  {
+    "_id": "3",
+    "brand_name": "Bengal Meat",
+    "rating": 4.3,
+    "description": "Bengal Meat is a trusted provider of premium quality meat and poultry products in Bangladesh.",
+    "brand_logo": "https://i.ibb.co.com/71v9Rm6/Bengal-Meat.jpg",
+    "coupons": [
+      {
+        "coupon_code": "BENGAL5",
+        "description": "Get BDT 50 off on orders over BDT 500.",
+        "expiry_date": "2024-12-05",
+        "condition": "Valid on all meat products.",
+        "coupon_type": "Flat Discount"
+      },
+      {
+        "coupon_code": "BENGALSHIP",
+        "description": "Free delivery on orders over BDT 1000.",
+        "expiry_date": "2024-11-25",
+        "condition": "Free delivery for Dhaka and Chittagong city.",
+        "coupon_type": "Free Shipping"
+      }
+    ],
+    "shop_link": "https://www.bengalmeat.com",
+    "category": "Food & Beverages",
+    "isSaleOn": false
+  },
+  {
+    "_id": "4",
+    "brand_name": "IDLC Finance",
+    "rating": 4.5,
+    "description": "IDLC Finance is a leading financial services provider offering personal loans, credit cards, and investment solutions.",
+    "brand_logo": "https://i.ibb.co.com/VDvdY32/IDLC-Finance.jpg",
+    "coupons": [
+      {
+        "coupon_code": "IDLCLOAN",
+        "description": "Get BDT 2000 off on loan processing fees.",
+        "expiry_date": "2024-12-20",
+        "condition": "Available for new personal loan customers.",
+        "coupon_type": "Flat Discount"
+      },
+      {
+        "coupon_code": "IDLCFD",
+        "description": "Free financial consultation for new customers.",
+        "expiry_date": "2024-11-30",
+        "condition": "First-time customers only.",
+        "coupon_type": "Service"
+      }
+    ],
+    "shop_link": "https://www.idlc.com",
+    "category": "Finance",
+    "isSaleOn": false
+  },
+  {
+    "_id": "5",
+    "brand_name": "Pran Foods",
+    "rating": 4.8,
+    "description": "Pran is a popular Bangladeshi food and beverage brand known for offering a wide variety of snacks, juices, and frozen foods.",
+    "brand_logo": "https://i.ibb.co.com/GWs5X6K/Pran-Foods.jpg",
+    "coupons": [
+      {
+        "coupon_code": "PRAN10",
+        "description": "Get 10% off on any Pran product purchase.",
+        "expiry_date": "2024-11-30",
+        "condition": "Valid on all food products.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "PRAN500",
+        "description": "Save BDT 500 on orders over BDT 3000.",
+        "expiry_date": "2024-12-15",
+        "condition": "Applies to all frozen foods and beverages.",
+        "coupon_type": "Flat Discount"
+      }
+    ],
+    "shop_link": "https://www.pranfoods.net",
+    "category": "Food & Beverages",
+    "isSaleOn": true
+  },
+  {
+    "_id": "6",
+    "brand_name": "Sena Kalyan Sangstha",
+    "rating": 4.4,
+    "description": "Sena Kalyan Sangstha provides a wide range of services including retail, healthcare, education, and real estate management.",
+    "brand_logo": "https://i.ibb.co.com/4sffHPF/Sena-Kalyan-Sangstha.jpg",
+    "coupons": [
+      {
+        "coupon_code": "SENAVIP",
+        "description": "Get a 10% discount on medical services for veterans and their families.",
+        "expiry_date": "2024-12-31",
+        "condition": "Only for veterans and their families.",
+        "coupon_type": "Discount"
+      },
+      {
+        "coupon_code": "SENASHIP",
+        "description": "Free consultation for new real estate clients.",
+        "expiry_date": "2024-12-10",
+        "condition": "Available for first-time clients.",
+        "coupon_type": "Service"
+      }
+    ],
+    "shop_link": "https://www.senakalyansangstha.com",
+    "category": "Non-Profit/Service",
+    "isSaleOn": false
+  },
+  {
+    "_id": "7",
+    "brand_name": "Banglalink",
+    "rating": 4.5,
+    "description": "Banglalink is one of the leading mobile operators in Bangladesh, offering competitive data plans, calling rates, and digital services.",
+    "brand_logo": "https://i.ibb.co.com/7n6DRgs/Banglalink.jpg",
+    "coupons": [
+      {
+        "coupon_code": "BLINK15",
+        "description": "Get 15% off on your first data plan purchase.",
+        "expiry_date": "2024-11-30",
+        "condition": "For new users only.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "BLINKFREEDATA",
+        "description": "Get 1GB of free internet with every recharge of BDT 500.",
+        "expiry_date": "2024-12-15",
+        "condition": "Applicable on recharge of BDT 500 or more.",
+        "coupon_type": "Data Offer"
+      }
+    ],
+    "shop_link": "https://www.banglalink.net",
+    "category": "Telecommunications",
+    "isSaleOn": false
+  },
+  {
+    "_id": "8",
+    "brand_name": "Robi",
+    "rating": 4.6,
+    "description": "Robi is a major telecom operator in Bangladesh offering a wide range of mobile services, including internet, calling, and digital solutions.",
+    "brand_logo": "https://i.ibb.co.com/DfrK8j1/Robi.jpg",
+    "coupons": [
+      {
+        "coupon_code": "ROBI20",
+        "description": "Get 20% off on mobile accessories.",
+        "expiry_date": "2024-12-20",
+        "condition": "Valid on selected accessories only.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "ROBI1GB",
+        "description": "Get 1GB of free data on recharges of BDT 200 or more.",
+        "expiry_date": "2024-11-30",
+        "condition": "Minimum recharge of BDT 200 required.",
+        "coupon_type": "Data Offer"
+      }
+    ],
+    "shop_link": "https://www.robi.com.bd",
+    "category": "Telecommunications",
+    "isSaleOn": true
+  },
+  {
+    "_id": "9",
+    "brand_name": "Gadget & Gear",
+    "rating": 4.4,
+    "description": "Gadget & Gear offers the latest electronic gadgets, mobile accessories, and tech solutions in Bangladesh.",
+    "brand_logo": "https://i.ibb.co.com/hDjdfs7/Gadget-Gear.png",
+    "coupons": [
+      {
+        "coupon_code": "GADGET10",
+        "description": "Get 10% off on all tech gadgets.",
+        "expiry_date": "2024-12-25",
+        "condition": "Valid on electronics and gadgets only.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "GADGETSHIP",
+        "description": "Free shipping on orders over BDT 1500.",
+        "expiry_date": "2024-11-30",
+        "condition": "No minimum order for registered users.",
+        "coupon_type": "Free Shipping"
+      }
+    ],
+    "shop_link": "https://www.gadgetandgear.com.bd",
+    "category": "Electronics",
+    "isSaleOn": true
+  }
+  
+]

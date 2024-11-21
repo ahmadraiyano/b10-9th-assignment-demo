@@ -1,8 +1,10 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Providers/AuthProvider';
 
 const Login = () => {
+    const [errorText, setErrorText] = useState("");
+    const [seePassword, setSeePassword] = useState(false);
 
     const navigate = useNavigate();
 
@@ -15,6 +17,8 @@ const Login = () => {
 
         console.log(email, password);
 
+        setErrorText("");
+
         signInUser(email, password)
         .then(result => {
             console.log(result.user);
@@ -23,6 +27,7 @@ const Login = () => {
         })
         .catch(error => {
             console.log("Error", error.message)
+            setErrorText(error.message);
         })
     }
 
@@ -48,11 +53,12 @@ const Login = () => {
                             </label>
                             <input name="email" type="email" placeholder="email" className="input input-bordered" required />
                         </div>
-                        <div className="form-control">
+                        <div className="form-control relative">
                             <label className="label">
                                 <span className="label-text">Password</span>
                             </label>
-                            <input name="password" type="password" placeholder="password" className="input input-bordered" required />
+                            <input name="password" type={seePassword? "text" : "password"} placeholder="password" className="input input-bordered" required />
+                            <button onClick={() => setSeePassword(!seePassword)} className='btn btn-xs absolute right-4 top-12'>{seePassword? "See" : <><del>See</del></>}</button>
                             <label className="label">
                                 <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                             </label>
@@ -61,6 +67,9 @@ const Login = () => {
                             <button className="btn btn-primary">Login</button>
                         </div>
                     </form>
+                    {
+                        errorText && <p className='text-center my-2 text-red-500'>Invalid email or password</p>
+                    }
                     <p className='text-center mb-4'>Don't have an account? please <Link className='text-blue-500' to="/register">Register</Link></p>
                     <p className='text-center mb-4'>
                         <button onClick={handleGoogleSignIn} className='btn'>Login with google</button>

@@ -16,6 +16,7 @@ import MyProfile from './components/MyProfile/MyProfile.jsx';
 import About from './components/About/About.jsx';
 import PrivateRoute from './routes/privateRoute.jsx';
 import Error from './components/Error/Error.jsx';
+import BrandDetails from './components/BrandDetails/BrandDetails.jsx';
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,11 @@ const router = createBrowserRouter([
       {
         path: "/brands",
         element: <Brands></Brands>
+      },
+      {
+        path: 'brands/:_id',
+        element: <BrandDetails></BrandDetails>,
+        loader: () => fetch('/couponData.json')
       },
       {
         path: "/myprofile",

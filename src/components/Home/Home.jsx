@@ -1,9 +1,10 @@
 import React from 'react';
+import Coupons from '../Coupons/Coupons';
 
 const Home = () => {
     return (
         <div>
-            Hello from home
+            <Coupons></Coupons>
         </div>
     );
 };
