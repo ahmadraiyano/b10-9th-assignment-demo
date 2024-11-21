@@ -1,14 +1,31 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useContext } from 'react';
+import { Link, NavLink } from 'react-router-dom';
 import logo from '../../assets/logo.png'
+import { AuthContext } from '../../Providers/AuthProvider';
 
 const Navbar = () => {
+
+    const { user, logOutUser } = useContext(AuthContext);
+
+    console.log(user);
+
+    const handleLogout = () => {
+        logOutUser()
+            .then(() => {
+                console.log("logged out successfully")
+            })
+            .catch(error => console.log("Error", error.message))
+    }
 
     const links = <>
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/brands">Brands</NavLink></li>
-        <li><NavLink to="/register">Register</NavLink></li>
-        <li><NavLink to="/login">Login</NavLink></li>
+        {
+            user && <>
+                <li><NavLink to="/myprofile">My Profile</NavLink></li>
+            </>
+        }
+        <li><NavLink to="/about">About</NavLink></li>
     </>
     return (
         <div className="navbar bg-base-100">
@@ -34,7 +51,7 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <a className="text-xl logo cursor-pointer"><img className='w-24' src={logo} alt="" /></a>
+                <Link to="/" className="text-xl logo cursor-pointer"><img className='w-24' src={logo} alt="" /></Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -42,7 +59,20 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Button</a>
+                {
+                    user ?
+                        <>
+                            <span>{user.email}</span>
+                            <a onClick={handleLogout} className='btn'>Logout</a>
+                        </>
+                        :
+                        <>
+                            <div className='flex gap-2'>
+                                <Link to="/login">Login</Link>
+                                <Link to="/register">Register</Link>
+                            </div>
+                        </>
+                }
             </div>
         </div>
     );

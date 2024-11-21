@@ -11,11 +11,17 @@ import Home from './components/Home/Home.jsx';
 import Register from './components/Register/Register.jsx';
 import Login from './components/Login/Login.jsx';
 import Brands from './components/Brands/Brands.jsx';
+import AuthProvider from './Providers/AuthProvider.jsx';
+import MyProfile from './components/MyProfile/MyProfile.jsx';
+import About from './components/About/About.jsx';
+import PrivateRoute from './routes/privateRoute.jsx';
+import Error from './components/Error/Error.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <Error></Error>,
     children: [
       {
         path: "/",
@@ -32,6 +38,14 @@ const router = createBrowserRouter([
       {
         path: "/brands",
         element: <Brands></Brands>
+      },
+      {
+        path: "/myprofile",
+        element: <PrivateRoute><MyProfile></MyProfile></PrivateRoute>
+      },
+      {
+        path: "/about",
+        element: <About></About>
       }
     ]
   },
@@ -39,6 +53,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   </StrictMode>,
 )
