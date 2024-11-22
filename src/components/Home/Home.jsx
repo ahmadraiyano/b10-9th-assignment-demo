@@ -1,10 +1,14 @@
 import React from 'react';
-import Coupons from '../Coupons/Coupons';
+import Hero from '../Hero/Hero';
+import TopBrands from '../TopBrands/TopBrands';
+import OnSales from '../OnSales/OnSales';
 
 const Home = () => {
     return (
         <div>
-            <Coupons></Coupons>
+            <Hero></Hero>
+            <TopBrands></TopBrands>
+            <OnSales></OnSales>
         </div>
     );
 };
