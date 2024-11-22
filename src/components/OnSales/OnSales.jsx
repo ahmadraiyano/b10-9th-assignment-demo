@@ -8,12 +8,15 @@ const OnSales = () => {
     useEffect(() => {
         fetch('couponData.json')
         .then(res => res.json())
-        .then(data => setOnSales(data))
+        .then(data => {
+            const filtered = data.filter(onSale => onSale.isSaleOn);
+            setOnSales(filtered)
+        })
     },[]);
 
     return (
         <div>
-            <div>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2'>
                 {
                     onSales.map(onSale => <OnSale onSale={onSale} key={onSale._id}></OnSale>)
                 }
