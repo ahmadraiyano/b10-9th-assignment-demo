@@ -25,7 +25,6 @@ const Navbar = () => {
                 <li><NavLink to="/myprofile">My Profile</NavLink></li>
             </>
         }
-        <li><NavLink to="/about">About</NavLink></li>
     </>
     return (
         <div className="navbar bg-base-100">

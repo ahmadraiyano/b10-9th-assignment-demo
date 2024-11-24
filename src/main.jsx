@@ -13,7 +13,6 @@ import Login from './components/Login/Login.jsx';
 import Brands from './components/Brands/Brands.jsx';
 import AuthProvider from './Providers/AuthProvider.jsx';
 import MyProfile from './components/MyProfile/MyProfile.jsx';
-import About from './components/About/About.jsx';
 import PrivateRoute from './routes/privateRoute.jsx';
 import Error from './components/Error/Error.jsx';
 import BrandDetails from './components/BrandDetails/BrandDetails.jsx';
@@ -48,10 +47,6 @@ const router = createBrowserRouter([
       {
         path: "/myprofile",
         element: <PrivateRoute><MyProfile></MyProfile></PrivateRoute>
-      },
-      {
-        path: "/about",
-        element: <About></About>
       }
     ]
   },

@@ -16,7 +16,7 @@ const OnSales = () => {
 
     return (
         <div>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 my-4'>
                 {
                     onSales.map(onSale => <OnSale onSale={onSale} key={onSale._id}></OnSale>)
                 }
