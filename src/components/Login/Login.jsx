@@ -58,7 +58,7 @@ const Login = () => {
                                 <span className="label-text">Password</span>
                             </label>
                             <input name="password" type={seePassword? "text" : "password"} placeholder="password" className="input input-bordered" required />
-                            <button onClick={() => setSeePassword(!seePassword)} className='btn btn-xs absolute right-4 top-12'>{seePassword? "See" : <><del>See</del></>}</button>
+                            <span onClick={() => setSeePassword(!seePassword)} className='btn btn-xs absolute right-4 top-12'>{seePassword? "See" : <><del>See</del></>}</span>
                             <label className="label">
                                 <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                             </label>

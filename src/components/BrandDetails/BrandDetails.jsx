@@ -13,14 +13,9 @@ const BrandDetails = () => {
 
 
     return (
-        <div className='bg-purple-500 py-10 relative mb-[420px]'>
-            <div className='w-9/12 mx-auto text-white'>
-                <h2 className="text-2xl text-center font-bold mb-6">Product Details</h2>
-                <p className='text-center'>Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
-            </div>
-            <div className='h-[180px]'></div>
+        <div>
 
-            <div className="bg-white absolute -bottom-24 lg:-bottom-96 w-10/12 left-7 lg:left-24 border-slate-100 p-4 border rounded-lg">
+            <div className="bg-white -bottom-24 lg:-bottom-96 w-10/12 left-7 lg:left-24 border-slate-100 p-4 border rounded-lg">
                 <div className="hero-content flex-col lg:flex-row">
                     <img
                         src={brand_logo}

@@ -77,7 +77,7 @@ const Register = () => {
                                 <span className="label-text">Password</span>
                             </label>
                             <input name="password" type={seePassword? "text" : "password"} placeholder="Password" className="input input-bordered" required />
-                            <button onClick={() => setSeePassword(!seePassword)} className='btn btn-xs absolute right-4 top-12'>{seePassword? "See" : <><del>See</del></>}</button>
+                            <span onClick={() => setSeePassword(!seePassword)} className='btn btn-xs absolute right-4 top-12'>{seePassword? "See" : <><del>See</del></>}</span>
                         </div>
                         <div className="form-control mt-6">
                             <button className="btn btn-primary">Register</button>

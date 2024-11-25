@@ -17,7 +17,7 @@ const Brands = () => {
                 <h1 className='text-center text-3xl font-bold'>All Available Brands</h1>
             </div>
             
-            <div className='grid grid-cols-1 gap-2'>
+            <div className='grid grid-cols-1 gap-2 my-4'>
                 {
                     brands.map(brand => <Brand brand={brand} key={brand.product_id}></Brand>)
                 }
